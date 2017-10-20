@@ -11,6 +11,8 @@ OBJS = $(SRCS_C:.c=.o)
 
 $(PROG): $(OBJS)
 
+$(OBJS): hello.h
+
 .PHONY: clean
 clean:
 	rm *.o $(PROG)
